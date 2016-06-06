@@ -1,0 +1,23 @@
+Site\SiteBundle\Entity\CategoriesProducts:
+    type: entity
+    table: categories_products
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: true
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        categoriesId:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: categories_id
+        productsId:
+            type: integer
+            nullable: false
+            unsigned: false
+            column: products_id
+    lifecycleCallbacks: {  }

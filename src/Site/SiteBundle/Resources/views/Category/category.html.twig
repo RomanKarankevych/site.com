@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Categories</title>
+</head>
+<body>
+    <div  >
+        <div class="categories" >
+            <h1>Categories</h1>
+            {% for category in categories %}
+                <a href="{{ category }}"><h1>{{ category }}</h1></a>
+            {% endfor %}
+        </div>
+        <hr>
+        <div class="categories" >
+            <h1>Curent category - {{ current_category }}</h1>
+        </div>
+        <hr>
+        <div class="products" >
+            <h1>Products in category {{ current_category }}:</h1>
+            {% for product in products %}
+                <div><h2>-{{ product }}</h2></div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
+
+

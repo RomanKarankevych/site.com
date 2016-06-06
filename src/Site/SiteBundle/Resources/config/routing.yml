@@ -1,0 +1,7 @@
+site_homepage:
+    path:     /
+    defaults: { _controller: SiteBundle:Default:index }
+
+site_category:
+    path:     /{category}
+    defaults: { _controller: SiteBundle:Category:index }
